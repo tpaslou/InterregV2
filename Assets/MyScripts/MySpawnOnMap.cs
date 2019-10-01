@@ -114,8 +114,8 @@ namespace Mapbox.Examples
                 Vector2d start_loc = Conversions.StringToLatLon(location_start_str);
                 Vector2d end_loc = Conversions.StringToLatLon(location_end_str);
                 //Debug.Log("Vec print : " + loc.ToString() );
-                instance.transform.localPosition = new Vector3( _map.GeoToWorldPosition(start_loc,false).x , _map.GeoToWorldPosition(start_loc, false).y-1, _map.GeoToWorldPosition(start_loc, false).z);
-                instance2.transform.localPosition = new Vector3(_map.GeoToWorldPosition(end_loc, false).x, _map.GeoToWorldPosition(end_loc, false).y-1, _map.GeoToWorldPosition(end_loc, false).z);
+                instance.transform.localPosition = new Vector3( _map.GeoToWorldPosition(start_loc,false).x , _map.GeoToWorldPosition(start_loc, false).y-6, _map.GeoToWorldPosition(start_loc, false).z);
+                instance2.transform.localPosition = new Vector3(_map.GeoToWorldPosition(end_loc, false).x, _map.GeoToWorldPosition(end_loc, false).y-6, _map.GeoToWorldPosition(end_loc, false).z);
 
                 //instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
                 instance.transform.parent = GameObject.Find("PipeStartPoints").transform;
