@@ -36,7 +36,7 @@ public class AR_Controller : MonoBehaviour
     public void R_Plus()
     {
 
-        rot += 0.5f;
+        rot += 1f;
 
         transform.rotation = Quaternion.Euler(0, rot, 0);
 
@@ -47,7 +47,7 @@ public class AR_Controller : MonoBehaviour
     public void R_Minus()
     {
 
-        rot -= 0.5f;
+        rot -=1f;
 
         transform.rotation = Quaternion.Euler(0, rot, 0);
     }
@@ -56,21 +56,21 @@ public class AR_Controller : MonoBehaviour
     public void Posx_plus()
     {
 
-        pos.x += 0.5f;
+        pos.x += 1f;
         transform.position = pos;
 
     }
 
     public void Posx_minus()
     {
-        pos.x -= 0.5f;
+        pos.x -= 1f;
         transform.position = pos;
 
     }
 
     public void Posz_plus()
     {
-        pos.z += 0.5f;
+        pos.z += 1f;
         transform.position = pos;
 
     }
@@ -78,7 +78,7 @@ public class AR_Controller : MonoBehaviour
 
     public void Posz_minus()
     {
-        pos.z -= 0.5f;
+        pos.z -=1f;
         transform.position = pos;
 
     }

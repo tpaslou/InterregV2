@@ -8,6 +8,7 @@ namespace Mapbox.Examples
 	using System.Collections.Generic;
     using static AttributesReader;
     using System;
+    using GoogleARCore;
 
     public class MySpawnOnMap : MonoBehaviour
 	{
@@ -145,13 +146,13 @@ namespace Mapbox.Examples
             }
             Vector3 old = GameObject.Find("PipeSystem").transform.position;
 
-            //GameObject.Find("Pipes").transform.position= new Vector3(old.x+10,old.y-4,old.z-1);
-
+            GameObject.Find("PipeSystem").transform.position= new Vector3(old.x,old.y,old.z);
+       
 
 
         }
 
-       void CreateCylinderBetweenPoints(Vector3 start , Vector3 end,float width)
+        void CreateCylinderBetweenPoints(Vector3 start , Vector3 end,float width)
         {
             var offset = end - start;
             var scale = new Vector3(width + 1, (offset.magnitude / 2.0f)+1, width + 1);
